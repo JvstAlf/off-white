@@ -47,7 +47,7 @@ setTimeout(() => {
 // TOP PROGRESS BAR
 
 const progressBar = document.querySelector('#progress-bar');
-const section = document.querySelector('section');
+const section = document.querySelector('body');
 const animateProgressBar = () => {
     let scrollDistance = -section.getBoundingClientRect().top;
     let progressWidth = (scrollDistance / (section.getBoundingClientRect().height - document.documentElement.clientHeight)) * 100;
