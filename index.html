@@ -17,7 +17,7 @@
         <div class="main" id="main">
             <div class="heading">
             <h2>
-                <span id="title1" onclick="title1()">Off-White</span><br>
+                <span id="title1" onclick="title1()">Off-White</span>
             </h2>
             </div>
             <div id="subtitle">   
@@ -28,17 +28,18 @@
             <p id="arrow-down">➤</p>
         </div>
         
+        <div id="progress-bar"></div>
+
         <div class="navbar" id="navbar">
-            <a href="#" id="home"><div class="home"></div></a>
+            <a id="home" onclick="toSection1()"><div class="home"></div></a>
             <ul class="navbar-elements">
-                <li onclick="toSection1()">Off-White</li>
                 <li onclick="toSection2()">VIRGIL IS HERE</li>
                 <li onclick="toSection3()">About</li>
+                <li onclick="toSection4()">SHOP</li>
             </ul>
         </div>
         
         <section class="section" id="section">
-        <div id="progress-bar"></div>
         <video src="images/video.mp4" class="video" autoplay loop muted></video>
         <section class="section1 watch" id="toSection1">
             <div class="logo">
@@ -54,19 +55,39 @@
         </section>
         </section>
 
-        <div class="shop">
+        <div class="shop" id="toSection4">
 
-            <div class="item1">
-                <img class="item1img" src="https://www.off---white.com/BWStaticContent/53000/5f95c425-37b2-4dcf-9455-fe4b0c0ce78c_ac-milan-campaign-editorial-page-4-desktop.jpg" onclick="redirect1()">
+            <div class="item1" onclick="redirect1()">
+                <div class="itemsection">
+                <img class="item1img" src="https://www.off---white.com/BWStaticContent/53000/5f95c425-37b2-4dcf-9455-fe4b0c0ce78c_ac-milan-campaign-editorial-page-4-desktop.jpg">
+                </div>
+                <div class="itemsection1">
+                    <p class="shopdetails">BOMBER VARSITY OFF-WHITE™ C/O AC MILAN</p><br>
+                    <p class="shopprice">€ 3450,00</p>
+                </div>
             </div>
 
-            <div class="item2">
-                <img class="item1img" src="https://www.highsnobiety.com/static-assets/thumbor/Y7XjZTag8M980Hp-fn97aNkcxoM=/1600x2000/www.highsnobiety.com/static-assets/wp-content/uploads/2023/01/18171758/off-white-chicago-bulls-11.jpg" onclick="redirect2()">
+            <div class="item2" onclick="redirect2()">
+                <div class="itemsection">
+                <img class="item1img" src="https://www.highsnobiety.com/static-assets/thumbor/Y7XjZTag8M980Hp-fn97aNkcxoM=/1600x2000/www.highsnobiety.com/static-assets/wp-content/uploads/2023/01/18171758/off-white-chicago-bulls-11.jpg">
+                </div>
+                <div class="itemsection1">
+                    <p class="shopdetails">BOMBER VARSITY OFF-WHITE C/O CHICAGO BULLS</p><br>
+                    <p class="shopprice">€ 3450,00</p>
+                </div>
             </div>
 
-            <div class="item3">
-                <img class="item1img" src="https://image-cdn.hypb.st/https%3A%2F%2Fhypebeast.com%2Fimage%2F2018%2F10%2Foff-white-nike-air-force-1-v2-black-007.jpg?q=90&w=1400&cbr=1&fit=max" onclick="redirect3()">
+            <div class="item3"  onclick="redirect3()">
+                <div class="itemsection">
+                <img class="item1img" src="https://image-cdn.hypb.st/https%3A%2F%2Fhypebeast.com%2Fimage%2F2018%2F10%2Foff-white-nike-air-force-1-v2-black-007.jpg?q=90&w=1400&cbr=1&fit=max">
+                </div>
+                <div class="itemsection1">
+                    <p class="shopdetails">NIKE AIR FORCE 1 LOW x OFF-WHITE</p><br>
+                    <p class="shopprice">€ 1085,00</p>
+                </div>
             </div>
+
+            <img src="images/offwhite1.png">
 
         </div>
 
