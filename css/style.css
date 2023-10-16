@@ -148,7 +148,8 @@ img {
 }
 
 ::selection {
-    background-color: #505050;
+    background-color: #808080;
+    color: black;
 }
 
 h1, h2, h3, h4, p, a{
@@ -405,7 +406,7 @@ h3:hover {
     width: 25rem;
     height: 25rem;
     -webkit-mask-image: url(../images/logo.svg);
-    mask-image: url(w3logo.png);
+    mask-image: url(../images/logo.svg);
     -webkit-mask-size: 100%;
     mask-size: 100%;
     -webkit-mask-repeat: no-repeat;
@@ -422,9 +423,10 @@ h3:hover {
     font-family: 'LilJohnny';
     font-size: 2.5rem;
     font-weight: 100;
-    right: 8%;
     user-select: none;
     -webkit-user-select: none;
+    opacity: 0;
+    padding: 1rem;
 }
 
 .shop {

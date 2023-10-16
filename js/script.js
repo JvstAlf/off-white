@@ -102,7 +102,12 @@ window.onbeforeunload = function () {
 
 function toSection1() {
   document.getElementById('toSection1').scrollIntoView({ behavior: 'smooth', block: 'center' });
-
+  document.getElementById('toSection2').style.opacity = "0"
+  document.getElementById('toSection3').style.opacity = "0"
+  setTimeout(() => {
+	document.getElementById('toSection2').style.opacity = "100"
+	  document.getElementById('toSection3').style.opacity = "100"
+}, 1500);
 }
 
 function toSection2() {
@@ -113,9 +118,12 @@ function toSection3() {
   document.getElementById('toSection3').scrollIntoView({ behavior: 'smooth', block: 'center' });
 }
 
+function toSection4() {
+  document.getElementById('toSection4').scrollIntoView({ behavior: 'smooth', block: 'center' });
+}
+
 window.addEventListener('load', function(){
   navbar.style.transform = "translateY(-5rem)"
-  clickMe.style.opacity = "0"
 })
 
 document.addEventListener('scroll', function(){
@@ -140,5 +148,5 @@ function Pressed() {
 var timer = window.setTimeout(notPressed, 6000)
 
 function redirect1() {window.open("https://www.off---white.com/it-at/shopping/item-19183342")}
-function redirect2() {window.open("https://www.highsnobiety.com/p/off-white-chicago-bulls/")}
+function redirect2() {window.open("https://www.off---white.com/en-us/shopping/off-white-off-white-c-o-chicago-bulls-blue-varsity-19512361")}
 function redirect3() {window.open("https://stockx.com/nike-air-force-1-low-off-white-black-white")}
