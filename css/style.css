@@ -201,20 +201,20 @@ section.in-page .title, section.in-page .p, section.in-page .p2{
     width: 95%;
     height: 3rem;
     background-color: rgba(32, 32, 32, 0,25);
-    z-index: 10;
+    z-index: 999;
     position: fixed;
     top: 1rem;
     left: 2.5%;
     transition: 0.5s;
     display: flex;
-    justify-content: space-between;
-    box-shadow: 1rem 0rem 1rem black;
+    justify-content: space-evenly;
+    box-shadow: 0rem 0.5rem 1rem black;
     transition: "0.5s ease-in-out";
     border-radius: 1rem;
 }
 
 .home {
-    z-index: 102;
+    z-index: 1001;
     height: 3rem;
     width: 3rem;
     margin-left: 0.5rem;
@@ -238,7 +238,7 @@ section.in-page .title, section.in-page .p, section.in-page .p2{
 
 .navbar ul {
     width: 100%;
-    z-index: 150;
+    z-index: 1000;
     color: white;
     font-family: 'Oswald';
     height: 3rem;
@@ -478,26 +478,28 @@ h3:hover {
     justify-content: center;
     object-fit: cover;
     text-align: center;
+    padding: 1rem;
 }
 
 .itemsection1 {
     margin-top: 1.5rem;
-    display: grid;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
     width: 100%;
     transition: 0.5s ease-out;
     justify-content: center;
-    object-fit: cover;
-    height: 20%;
     text-align: center;
     opacity: 0;
-    transform: translateY(-5rem);
     cursor: pointer;
+    padding: 1rem;
 }
 
 .item1img {
     border-radius: 1.2rem;
     object-fit: cover;
-    width: 95%;
+    width: 100%;
+    height: 100%;
 }
 
 .itemsection:hover {
@@ -510,7 +512,6 @@ h3:hover {
     color: white;
     font-family: 'HelveticaNeueBold';
     font-size: 1.1rem;
-    width: 90%;
     cursor: pointer;
 }
 
