@@ -122,10 +122,6 @@ function toSection4() {
   document.getElementById('toSection4').scrollIntoView({ behavior: 'smooth', block: 'center' });
 }
 
-window.addEventListener('load', function(){
-  navbar.style.transform = "translateY(-5rem)"
-})
-
 document.addEventListener('scroll', function(){
   if(window.scrollY >= 800) {
     navbar.style.transform = "translate(0)"
