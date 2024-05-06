@@ -12,11 +12,10 @@ function title1() {
 	subtitle.style.opacity = "0"
 	arrowDown.style.opacity = "0";
 	arrowDown.style.scale = "0%";
-  //document.getElementsByTagName('html')[0].style.overflow = "scroll"
+  document.querySelector('html').style.overflow = 'scroll'
 	setTimeout(() => {
 	main.style.display = "none"
 }, 1000);
-	document.body.scrollTop = 0;
         document.documentElement.scrollTop = 0;
 }
 
