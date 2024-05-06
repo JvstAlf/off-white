@@ -46,6 +46,9 @@
 
 html{
     background-color: black;
+    overflow: hidden;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
 }
 
 .video {
@@ -97,12 +100,6 @@ html{
     display: none;
   }
   
-  /* Hide scrollbar for IE, Edge and Firefox */
-html {
-    -ms-overflow-style: none;  /* IE and Edge */
-    scrollbar-width: none;  /* Firefox */
-  }
-
 .section {
     opacity: 0;
     z-index: 2;
@@ -211,7 +208,7 @@ section.in-page .title, section.in-page .p, section.in-page .p2{
     box-shadow: 0rem 0.5rem 1rem black;
     transition: "0.5s ease-in-out";
     border-radius: 1rem;
-    transform: translateY(-5rem)
+    transform: translateY(-5rem);
 }
 
 .home {
