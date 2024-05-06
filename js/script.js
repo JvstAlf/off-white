@@ -16,6 +16,8 @@ function title1() {
 	setTimeout(() => {
 	main.style.display = "none"
 }, 1000);
+	document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
 }
 
 title.addEventListener('mouseover', function(){
