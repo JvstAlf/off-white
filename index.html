@@ -31,7 +31,7 @@
         <navbar class="navbar" id="navbar">
             
             <ul class="navbar-elements">
-                <a id="home" onclick="toSection1()"><div class="home"></div></a>
+                <div id="home" class="home" onclick="toSection1()"></div>
                 <li onclick="toSection2()">VIRGIL IS HERE</li>
                 <li onclick="toSection3()">About</li>
                 <li onclick="toSection4()">Shop</li>
@@ -39,7 +39,7 @@
         </navbar>
         
         <section class="section" id="section">
-        <video src="images/video.mp4" class="video" autoplay loop muted></video>
+        <video src="images/video.mp4" class="video" autoplay loop muted preload="auto" playsinline></video>
         <section class="section1 watch" id="toSection1">
             <div class="logo">
                 <video src="images/video2.mp4" class="video1" autoplay loop muted></video>
