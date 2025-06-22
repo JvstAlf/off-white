@@ -181,6 +181,7 @@
         object-fit: cover;
         text-align: center;
         height: 90%;
+        width: 100%;
         padding: 1rem;
     }
 
@@ -296,6 +297,7 @@
         object-fit: cover;
         text-align: center;
         height: 90%;
+        width: 100%;
         padding: 1rem;
     }
 
