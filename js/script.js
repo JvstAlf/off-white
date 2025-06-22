@@ -5,18 +5,23 @@ const arrowDown = document.getElementById('arrow-down')
 const navbar = document.getElementById('navbar')
 const clickMe = document.getElementById('click-me')
 
-function title1() {
+function title1(e) {
+    e.stopPropagation();
+    e.stopImmediatePropagation(); 
+
+    setTimeout(() => {
     main.style.transition = "1s ease-in-out";
     main.style.transform = "translateY(-100%)";
-	subtitle.style.transform = "translateY(-2rem)";
-	subtitle.style.opacity = "0"
-	arrowDown.style.opacity = "0";
-	arrowDown.style.scale = "0%";
-  document.querySelector('html').style.overflow = 'scroll'
-	setTimeout(() => {
-	main.style.display = "none"
-}, 1000);
-        document.documentElement.scrollTop = 0;
+    subtitle.style.transform = "translateY(-2rem)";
+    subtitle.style.opacity = "0";
+    arrowDown.style.opacity = "0";
+    arrowDown.style.scale = "0%";
+    document.querySelector('html').style.overflow = 'scroll';
+
+    setTimeout(() => {
+      main.style.display = "none";
+    }, 1000);
+    }, 50);
 }
 
 title.addEventListener('mouseover', function(){

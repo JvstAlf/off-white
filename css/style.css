@@ -412,6 +412,7 @@ h3:hover {
     mask-size: 100%;
     -webkit-mask-repeat: no-repeat;
     mask-repeat: no-repeat;
+    pointer-events: none;
 }
 
 @keyframes anim {

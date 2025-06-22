@@ -18,7 +18,7 @@
         <div class="main" id="main">
             <div class="heading">
             <h2>
-                <span id="title1" onclick="title1()">Off-White</span>
+                <span id="title1" onclick="title1(event)">Off-White</span>
             </h2>
             </div>
             <div id="subtitle">   
@@ -39,12 +39,13 @@
         </navbar>
         
         <section class="section" id="section">
-        <video src="images/video.mp4" class="video" autoplay loop muted preload="auto" playsinline></video>
+
         <section class="section1 watch" id="toSection1">
             <div class="logo">
-                <video src="images/video2.mp4" class="video1" autoplay loop muted></video>
+                <video src="images/video2.mp4" class="video1" autoplay loop muted preload="auto" playsinline></video>
             </div>
         </section>
+
         <section class="section2 watch" id="toSection2">
             <h1 class="title">"VIRGIL IS HERE"</h1>
             <p class="p">Virgil Abloh founded Off-White™ in 2013 as a multi-platform creative endeavor, a space for his continuous experimentation. The main medium being fashion yet he combined ideas of streetwear, luxury, art, music, and architecture. Virgil's visionary approach to the medium of fashion remains iconoclastic and profoundly conceptual yet accessible to a broad global audience.</p>
@@ -89,6 +90,8 @@
             
 
         </div>
+
+        <video src="images/video.mp4" class="video" autoplay loop muted preload="auto" playsinline></video>
 
         <script src="js/script.js"></script>
     </body>
