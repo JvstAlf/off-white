@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="google" content="notranslate">
+        <meta name="description" content="description">
+        <meta name="keywords" content="keywords">
+        <meta name="author" content="Alf">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/media.css">
+        <title>Off-White</title>
+        <link rel="icon" href="images/logo.svg">
+    </head>
+
+    <body>
+
+        <div class="main" id="main">
+            <div class="heading">
+            <h2>
+                <span id="title1" onclick="title1()">Off-White</span>
+            </h2>
+            </div>
+            <div id="subtitle">   
+            </div>
+            <p id="arrow-down">➤</p>
+        </div>
+        
+        <div id="progress-bar"></div>
+
+        <navbar class="navbar" id="navbar">
+            
+            <ul class="navbar-elements">
+                <a id="home" onclick="toSection1()"><div class="home"></div></a>
+                <li onclick="toSection2()">VIRGIL IS HERE</li>
+                <li onclick="toSection3()">About</li>
+                <li onclick="toSection4()">Shop</li>
+            </ul>
+        </navbar>
+        
+        <section class="section" id="section">
+        <video src="images/video.mp4" class="video" autoplay loop muted></video>
+        <section class="section1 watch" id="toSection1">
+            <div class="logo">
+                <video src="images/video2.mp4" class="video1" autoplay loop muted></video>
+            </div>
+        </section>
+        <section class="section2 watch" id="toSection2">
+            <h1 class="title">"VIRGIL IS HERE"</h1>
+            <p class="p">Virgil Abloh founded Off-White™ in 2013 as a multi-platform creative endeavor, a space for his continuous experimentation. The main medium being fashion yet he combined ideas of streetwear, luxury, art, music, and architecture. Virgil's visionary approach to the medium of fashion remains iconoclastic and profoundly conceptual yet accessible to a broad global audience.</p>
+        </section>
+        <section class="section3 watch" id="toSection3">
+            <p class="p2">Established in 2013, Off-White™ is defining the grey area between black and white as a color. Under the brand name, seasonal collections of men’s and women’s clothing, objects, furniture, and publications are articulating a current cultural vision. Collections are embedded in a recurrent back story with an emphasis on creating garments that have an identity by design. With a design studio based in Milan, the label harnesses Italy’s history and craftsmanship yet offers a global perspective in terms of design and trends.</p>
+        </section>
+        </section>
+
+        <div class="shop">
+
+            <div class="item1" onclick="redirect1()" id="toSection4">
+                <div class="itemsection">
+                <img class="item1img" src="https://i.pinimg.com/474x/92/c0/fc/92c0fc85705923b5494dc7f457ad8826.jpg">
+                </div>
+                <div class="itemsection1">
+                    <p class="shopdetails">BOMBER VARSITY OFF-WHITE™ C/O AC MILAN</p><br>
+                    <p class="shopprice">€ 3450,00</p>
+                </div>
+            </div>
+
+            <div class="item2" onclick="redirect2()">
+                <div class="itemsection">
+                <img class="item1img" src="https://www.highsnobiety.com/static-assets/thumbor/Y7XjZTag8M980Hp-fn97aNkcxoM=/1600x2000/www.highsnobiety.com/static-assets/wp-content/uploads/2023/01/18171758/off-white-chicago-bulls-11.jpg">
+                </div>
+                <div class="itemsection1">
+                    <p class="shopdetails">BOMBER VARSITY OFF-WHITE C/O CHICAGO BULLS</p><br>
+                    <p class="shopprice">€ 5180,00</p>
+                </div>
+            </div>
+
+            <div class="item3"  onclick="redirect3()">
+                <div class="itemsection">
+                <img class="item1img" src="https://image-cdn.hypb.st/https%3A%2F%2Fhypebeast.com%2Fimage%2F2018%2F10%2Foff-white-nike-air-force-1-v2-black-007.jpg?q=90&w=1400&cbr=1&fit=max">
+                </div>
+                <div class="itemsection1">
+                    <p class="shopdetails">NIKE AIR FORCE 1 LOW x OFF-WHITE</p><br>
+                    <p class="shopprice">€ 1085,00</p>
+                </div>
+            </div>
+
+            
+
+        </div>
+
+        <script src="js/script.js"></script>
+    </body>
+</html>
